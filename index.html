@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>mhari's online corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to my online corner!</h1>
+ 
+  <!-- Toggle: hidden checkbox drives the label's visual state -->
+  <input type="checkbox" id="switch" class="switch-input">
+  <label for="switch" class="switch-label">
+    <span class="switch-track">
+      <span class="switch-thumb"></span>
+    </span>
+    <span id="toggle-text">Turn into: Night</span>
+  </label>
+ 
+  <!-- Two-column layout -->
+  <main class="split-layout">
+    <div class="split-left">
+      <p class="greeting">Hiya, hello!<br>I'm Mhari, but you can call me May if you wish to.
+       I'm a Brazilian author (alright, not yet published, but on the journey toward it) &
+       since I have lots of interests, I decided to create a site to gather my things together. Authorial things and share some interests as well (like my Letterboxd account and my favourite Spotify playlists :)
+       <br>
+       <i>and that's it! <b>be free, be wild, be whimsy n have fun!!</b></p></i>
+    </div>
+    <div class="split-right">
+      <ul class="links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Substack</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Letterboxd</a></li>
+      </ul>
+    </div>
+  </main>
+ 
+  <!-- Background image -->
+  <img src="background.jpg" alt="Forest" width="720px" height="505px">
+ 
+   <script>
+    const checkbox = document.getElementById('switch');
+    const label    = document.getElementById('toggle-text');
+ 
+    checkbox.addEventListener('change', function () {
+      const isDark = this.checked;
+      document.body.classList.toggle('dark', isDark);
+      label.textContent = isDark ? 'Turn into: Day' : 'Turn into: Night';
+    });
+  </script>
+</body>
+</html>
