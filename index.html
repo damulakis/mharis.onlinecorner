@@ -16,7 +16,7 @@
     <span class="switch-track">
       <span class="switch-thumb"></span>
     </span>
-    <span id="toggle-text">Turn into: Night</span>
+    <span id="toggle-text">Turn into: Day</span>
   </label>
  
   <!-- Two-column layout -->
@@ -40,6 +40,67 @@
  
   <!-- Background image -->
   <img src="background.jpg" alt="Forest" width="720px" height="505px">
+
+  <!-- Shelf of Poems-->
+   <div class="shelf">
+    <h2 class="poems-tittle">Current Favourite Poems:</h2>
+ 
+    <div class="book">
+      <p>You do not have to be good.
+You do not have to walk on your knees
+for a hundred miles through the desert, repenting.
+You only have to let the soft animal of your body
+love what it loves.
+Tell me about despair, yours, and I will tell you mine.
+Meanwhile the world goes on.
+Meanwhile the sun and the clear pebbles of the rain
+are moving across the landscapes,
+over the prairies and the deep trees,
+the mountains and the rivers.
+Meanwhile the wild geese, high in the clean blue air,
+are heading home again.
+Whoever you are, no matter how lonely,
+the world offers itself to your imagination,
+calls to you like the wild geese, harsh and exciting —
+over and over announcing your place
+in the family of things.</p>
+      <div class="cover cover-one">
+        <div class="cover-title">
+          <div class="rule"></div>
+          <h2>Wild Geese</h2>
+          <div class="rule"></div>
+          <p>Mary Oliver</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="book">
+      <p>We are dreaming of tomorrow and tomorrow isn't coming
+We are dreaming of a glory that we don't really want
+We are dreaming of a new day when the new day's here already
+We are running from the battle when it's one that must be fought.
+And still we sleep.
+ 
+We are listening for the calling but never really heeding
+Hoping for the future when the future's only plans
+Dreaming of the wisdom that we are dodging daily
+Praying for a saviour when salvation's in our hands.
+And still we sleep.
+And still we dream,
+And still we fear,
+And still we pray,
+And still we sleep.</p>
+      <div class="cover cover-two">
+        <div class="cover-title">
+          <div class="rule"></div>
+          <h2>And Still<br>We Sleep</h2>
+          <div class="rule"></div>
+          <p>Todd Anderson</p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
  
    <script>
     const checkbox = document.getElementById('switch');
@@ -48,7 +109,7 @@
     checkbox.addEventListener('change', function () {
       const isDark = this.checked;
       document.body.classList.toggle('dark', isDark);
-      label.textContent = isDark ? 'Turn into: Day' : 'Turn into: Night';
+      label.textContent = isDark ? 'Turn into: Night' : 'Turn into: Day';
     });
   </script>
 </body>
